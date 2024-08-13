@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Car Quiz App</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <label for="favorite-car">What's your favorite car brand?</label>
+                <select id="favorite-car" name="favorite-car">
+                    <option value="toyota">Toyota</option>
+                    <option value="ford">Ford</option>
+                    <option value="bmw">BMW</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="car-opinion">Why do you like this brand?</label>
+                <textarea id="car-opinion" name="car-opinion" rows="4" cols="50"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="results" class="hidden">
+            <h2>Your Responses</h2>
+            <p><strong>Favorite Car Brand:</strong> <span id="result-car"></span></p>
+            <p><strong>Why:</strong> <span id="result-opinion"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
